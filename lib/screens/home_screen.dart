@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 'https://flagcdn.com/w320/un.png',
                 height: 90,
                 fit: BoxFit.contain,
-                errorBuilder: (_, __, ___) => const Icon(Icons.flag, size: 80),
+                errorBuilder: (_, _, _) => const Icon(Icons.flag, size: 80),
               ),
             ),
             const SizedBox(height: 20),
@@ -173,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
             // Dropdown de tempo
             DropdownButtonFormField<int>(
-              value: _duration,
+              initialValue: _duration,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.timer),

@@ -34,7 +34,7 @@ class Country {
         loadingBuilder: (_, child, progress) => progress == null
             ? child
             : const Center(child: CircularProgressIndicator()),
-        errorBuilder: (_, __, ___) => const Icon(Icons.flag, size: 80),
+        errorBuilder: (_, _, _) => const Icon(Icons.flag, size: 80),
       );
     }
   }
